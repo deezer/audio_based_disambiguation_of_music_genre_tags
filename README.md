@@ -28,3 +28,5 @@ similarity_df = pd.read_csv("taxonomy_learning/fw_tag_similarity.csv", index_col
 # similarity based on f_w between tags "heavy metal" and "thrash"
 print(similarity_df.loc["heavy metal","thrash"])
 ```
+
+The repository also contains the datasets that were used to train the CNN and to compute the embeddings as 3 csv files (train.csv, validation.csv and test.csv) for each experiment, containing deezer song Ids and labels. Metadata and audio previews for each song IDs can easily be retrieved using the [Deezer API](https://developers.deezer.com/api/track).
